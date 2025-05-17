@@ -1,0 +1,93 @@
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	h2 {
+		font-family: "Orbitron", sans-serif;
+		color: white;
+		background-color: #3e7cb1;
+		padding: 1rem;
+		border-radius: 5px;
+		text-transform: uppercase;
+	}
+	p {
+		font-family: "Orbitron", sans-serif;
+	}
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 2rem 2rem 2rem;
+	padding: 1rem;
+	background-color: #3e7bb14f;
+	border-radius: 10px;
+	h3 {
+		display: flex;
+		padding: 16px 32px 16px 32px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0;
+		background-color: white;
+		color: black;
+		border-radius: 10px;
+		font-family: "Orbitron", sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+form input {
+	display: flex;
+	flex-direction: column;
+	margin: 8px 0px 8px 0px;
+	border: none;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+@media screen and (min-width: 650px) {
+	input {
+		width: 100%;
+	}
+}
+
+.input {
+	height: 150px;
+	width: 100%;
+	padding: 0.5rem;
+	border: none;
+	margin: 0.5em 0em;
+}
+
+form section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button#sendButton {
+	margin-top: 16px;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	width: 125px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color: black;
+	font-family: "Orbitron", sans-serif;
+	transition: transform 0.2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+@media (min-width: 670px) {
+	.paragraphe-form {
+		width: 70vw;
+	}
+}
