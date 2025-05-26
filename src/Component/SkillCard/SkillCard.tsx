@@ -72,7 +72,20 @@ function SkillCard() {
       <div className="card__face card__face--front">
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="logo de css" />
       </div>
-      <div className="card__face card__face--back">back</div>
+      <div className="card__face card__face--back">
+					<h3>CSS</h3>
+				<ul>
+					<li>Introduction au CSS</li>
+					<li>CSS imbriqué </li>
+					<li>Utilisation de l'inspecteur</li>
+					<li>Box model</li>
+					<li>Flex Box</li>
+					<li>Grid</li>
+					<li>Responsive Design & Media queries</li>
+					<li>Les variables</li>
+					<li>Les animations</li>
+				</ul>
+				</div>
     </div>
   </div>
 
@@ -81,7 +94,19 @@ function SkillCard() {
       <div className="card__face card__face--front">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="logo de react" />
       </div>
-      <div className="card__face card__face--back">back</div>
+      <div className="card__face card__face--back">
+			<h3>REACT</h3>
+				<ul>
+					<li>Introduction a REACT</li>
+					<li>Premier composant </li>
+					<li>Afficher des données dans un composant</li>
+					<li>Passer des props</li>
+					<li>Utiliser un state</li>
+					<li>Répéter un bloc d'affichage avec map</li>
+					<li>Partager un state</li>
+					<li>Le useEffect</li>
+				</ul>
+			</div>
     </div>
   </div>
 
