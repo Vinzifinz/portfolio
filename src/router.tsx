@@ -6,18 +6,14 @@ import CV from "./Component/CV/CV";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
 		element: <App />,
 
 		children: [
 			{
-				index: true,
+				path:"/",
 				element: <HomePage />,
 			},
-			{
-				path: "/home",
-				element: <HomePage />,
-			},
+			
 			{
 				path: "/contact",
 				element: <Contact />,
