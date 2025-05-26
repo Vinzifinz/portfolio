@@ -54,7 +54,7 @@ header {
 		}
 	}
 }
-li {
+.navbar ul li {
 	margin: 0 0 8px 0;
 
 	&:hover {

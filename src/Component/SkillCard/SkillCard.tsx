@@ -50,7 +50,20 @@ function SkillCard() {
       <div className="card__face card__face--front">
         <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" alt="logo de html" />
       </div>
-      <div className="card__face card__face--back">back</div>
+      <div className="card__face card__face--back">
+				<h3>HTML</h3>
+				<ul>
+					<li>Introduction au HTML</li>
+					<li>La balise head </li>
+					<li>L'écrit sous toutes ses formes</li>
+					<li>Les liens hypertexte</li>
+					<li>Structure et sémantique</li>
+					<li>Multimédias</li>
+					<li>Les formulaires</li>
+					<li>Les tableaux</li>
+					<li>Performance & Structure</li>
+				</ul>
+				</div>
     </div>
   </div>
 
