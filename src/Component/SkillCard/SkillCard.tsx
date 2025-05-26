@@ -1,8 +1,14 @@
+import { useState } from "react";
 import "./SkillCard.css";
 function SkillCard() {
+	const [isFlipped, setIsFlipped] = useState (false)
+
+	const handleClick = ()=> {
+		setIsFlipped (prev=>!prev)
+	}
 	return (
 		<>
-			<h3>Front-End</h3>
+			{/*<h3>Front-End</h3>
 			<div className="skill-card-frontend">
 				<article className="skill-card-html">
 					<img
@@ -37,7 +43,45 @@ function SkillCard() {
 						alt="logo de node.js"
 					/>
 				</article>
-			</div>
+			</div>*/}
+		<div className="card-container">
+  <div className="scene">
+    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
+      <div className="card__face card__face--front">
+        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" alt="logo de html" />
+      </div>
+      <div className="card__face card__face--back">back</div>
+    </div>
+  </div>
+
+  <div className="scene">
+    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
+      <div className="card__face card__face--front">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="logo de css" />
+      </div>
+      <div className="card__face card__face--back">back</div>
+    </div>
+  </div>
+
+  <div className="scene">
+    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
+      <div className="card__face card__face--front">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="logo de react" />
+      </div>
+      <div className="card__face card__face--back">back</div>
+    </div>
+  </div>
+
+  <div className="scene">
+    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
+      <div className="card__face card__face--front">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="logo de javascript" />
+      </div>
+      <div className="card__face card__face--back">back</div>
+    </div>
+  </div>
+</div>
+
 		</>
 	);
 }

@@ -16,7 +16,7 @@ function Header() {
 			<nav className={`navbar ${isMenuOpen ? "open" : "hidden"}`}>
 				<ul>
 					<li>
-						<Link to="/home">Home</Link>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
 						<Link to="/CV">CV</Link>
