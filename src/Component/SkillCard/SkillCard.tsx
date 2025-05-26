@@ -1,125 +1,59 @@
-import { useState } from "react";
 import "./SkillCard.css";
+import FlipCard from "../FlipCard/Flipcard";
 function SkillCard() {
-	const [isFlipped, setIsFlipped] = useState (false)
 
-	const handleClick = ()=> {
-		setIsFlipped (prev=>!prev)
-	}
 	return (
 		<>
-			{/*<h3>Front-End</h3>
-			<div className="skill-card-frontend">
-				<article className="skill-card-html">
-					<img
-						src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg"
-						alt="logo de html"
-					/>
-				</article>
-				<article className="skill-card-css">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-						alt="logo de css"
-					/>
-				</article>
-				<article className="skill-card-react">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-						alt="logo de react"
-					/>
-				</article>
-				<article className="skill-card-js">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-						alt="Logo de javaScript"
-					/>
-				</article>
-			</div>
-			<div className="skill-card-Backend">
-				<h3>Back-End</h3>
-				<article className="skill-card-node">
-					<img
-						src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-						alt="logo de node.js"
-					/>
-				</article>
-			</div>*/}
 		<div className="card-container">
-  <div className="scene">
-    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
-      <div className="card__face card__face--front">
-        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" alt="logo de html" />
-      </div>
-      <div className="card__face card__face--back">
-				<h3>HTML</h3>
-				<ul>
-					<li>Introduction au HTML</li>
-					<li>La balise head </li>
-					<li>L'écrit sous toutes ses formes</li>
-					<li>Les liens hypertexte</li>
-					<li>Structure et sémantique</li>
-					<li>Multimédias</li>
-					<li>Les formulaires</li>
-					<li>Les tableaux</li>
-					<li>Performance & Structure</li>
-				</ul>
-				</div>
-    </div>
-  </div>
-
-  <div className="scene">
-    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
-      <div className="card__face card__face--front">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="logo de css" />
-      </div>
-      <div className="card__face card__face--back">
-					<h3>CSS</h3>
-				<ul>
-					<li>Introduction au CSS</li>
-					<li>CSS imbriqué </li>
-					<li>Utilisation de l'inspecteur</li>
-					<li>Box model</li>
-					<li>Flex Box</li>
-					<li>Grid</li>
-					<li>Responsive Design & Media queries</li>
-					<li>Les variables</li>
-					<li>Les animations</li>
-				</ul>
-				</div>
-    </div>
-  </div>
-
-  <div className="scene">
-    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
-      <div className="card__face card__face--front">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="logo de react" />
-      </div>
-      <div className="card__face card__face--back">
-			<h3>REACT</h3>
-				<ul>
-					<li>Introduction a REACT</li>
-					<li>Premier composant </li>
-					<li>Afficher des données dans un composant</li>
-					<li>Passer des props</li>
-					<li>Utiliser un state</li>
-					<li>Répéter un bloc d'affichage avec map</li>
-					<li>Partager un state</li>
-					<li>Le useEffect</li>
-				</ul>
-			</div>
-    </div>
-  </div>
-
-  <div className="scene">
-    <div className={`card ${isFlipped ? "is-flipped" : ""}`} onClick={handleClick}>
-      <div className="card__face card__face--front">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="logo de javascript" />
-      </div>
-      <div className="card__face card__face--back">back</div>
-    </div>
-  </div>
-</div>
-
+			<FlipCard
+				imageSrc="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg"
+				altText="logo de html"
+				name="HTML"
+				description="Maîtrise des bases du HTML5 pour structurer des pages web à la mise en forme claire, sémantique, accessible et bien organisée. Mise en place des bonnes pratiques"
+			/>
+			<FlipCard
+				imageSrc="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+				altText="logo de css"
+				name="CSS"
+				description="Connaissance de CSS3 pour styliser des interfaces responsives et modernes. Pratique des flexbox, grid, et animations pour améliorer l’expérience utilisateur."
+			/>
+			<FlipCard
+				imageSrc="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+				altText="logo de react"
+				name="REACT"
+				description=" Créations d'interfaces utilisateur dynamiques et modulaires. Utilisation des composants, props, state et du JSX pour construire des applications réactives côté client."
+			/>
+			<FlipCard
+				imageSrc="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+				altText="logo de javascript"
+				name="JAVASCRIPT"
+				description="Compétences en JavaScript pour dynamiser les pages web : manipulation du DOM, gestion des événements, fonctions asynchrones et logique de base côté client."
+			/>
+			<FlipCard
+				imageSrc="/node-js-seeklogo.svg"
+				altText="logo de node.js"
+				name="NODE JS"
+				description="Initiation à Node.js pour développer des applications web côté serveur. Utilisation de npm, création de serveurs simples avec Express, et manipulation de fichiers."
+			/>
+				<FlipCard
+				imageSrc="/git-seeklogo.svg"
+				altText="logo de Git"
+				name="GIT"
+				description="Utilisation de Git pour le versionnage de code. Création de branches, gestion des commits, résolution de conflits et suivi de l’historique des projets."
+			/>
+				<FlipCard
+				imageSrc="/github-seeklogo.png"
+				altText="logo de Github"
+				name="GITHUB"
+				description="Mise en ligne de projets sur GitHub, collaboration via pull requests, et gestion de dépôts publics/privés. Présentation de mon travail et suivi des contributions."
+			/>
+			<FlipCard
+				imageSrc="/mysql-seeklogo.svg"
+				altText="logo de mysql"
+				name="MYSQL"
+				description="Bases en MySQL pour concevoir et interroger des bases de données relationnelles : création de tables, requêtes SQL, jointures et gestion de données."
+			/>
+		</div>
 		</>
 	);
 }
